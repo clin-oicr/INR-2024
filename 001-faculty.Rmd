@@ -1,0 +1,44 @@
+# Meet Your Faculty
+
+#### NAME
+
+<img src="./img/faculty/MISSINGHEADSHOT.PNG" width="200" alt="Photo of NAME">
+
+>JOB TITLE <br>
+INSTITUTION <br>
+LOCATION
+>
+> --- CONTACT INFO, IF PROVIDED
+
+BIO GOES HERE
+
+#### Michelle Brazas, PhD
+
+<img src="./img/faculty/michelle-brazas.jpg" width="200" alt="Photo of Michelle Brazas.">
+
+
+>Scientific Director <br>
+Canadian Bioinformatics Workshops (CBW) <br>
+Toronto, ON, CA
+>
+> --- director@bioinformatics.ca
+
+Dr. Michelle Brazas is the Associate Director for Adaptive Oncology at the Ontario Institute for
+Cancer Research (OICR), and acting Scientific Director at Bioinformatics.ca. Previously, Dr.
+Brazas was the Program Manager for Bioinformatics.ca and a faculty member in
+Biotechnology at BCIT. Michelle co-founded and runs the Toronto Bioinformatics User Group
+(TorBUG) now in its 11th season, and plays an active role in the International Society of
+Computational Biology where she sits on the Board of Directors and Executive Board.
+
+#### Nia Hughes (she/her)
+
+<img src="./img/faculty/nia-hughes.jpeg" width="200" alt="Photo of Nia Hughes.">
+
+>Platform Training Manager, Canadian Bioinformatics Hub<br>
+Ontario Institute for Cancer Research<br>
+Toronto, ON, Canada
+>
+> --- training@bioinformatics.ca
+
+Nia is the Platform Training Manager for the Canadian Bioinformatics Hub, where she coordinates the Canadian Bioinformatics Workshop Series. Prior to starting at OICR, she completed her M.Sc. in Bioinformatics from the University of Guelph in 2020 before working there as a bioinformatician studying epigenetic and transcriptomic patterns across maize varieties.
+
