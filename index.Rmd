@@ -18,7 +18,7 @@ favicon: img/favicon.ico
 
 # Workshop Info
 
-Welcome to the 2024 Introductiont to R Canadian Bioinformatics Workshop webpage!
+Welcome to the 2024 Introduction to R Canadian Bioinformatics Workshop webpage!
 
 <img src="img/INR-2024-Faculty-Image.png" width="650" alt="Intro to R Class 2024">-
 

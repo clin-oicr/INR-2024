@@ -1,8 +1,8 @@
-# Module 2
+# Day 2
 
 ## Lab
 
-### Day 1 Project  
+### Project Review  
 
 For this mini guided project, we will be working with a dataset quantifying water quality that is publicly available at: https://www.kaggle.com/datasets/adityakadiwal/water-potability?resource=download
 
