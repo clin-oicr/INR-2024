@@ -1,16 +1,16 @@
 --- 
-title: "NAME OF WORKSHOP YEAR"
-author: "Faculty: INSTRUCTOR AND TA NAMES"
-date: "DATES"
+title: "Introduction to R 2024"
+author: "Faculty: Frances Wong, Andrés Melani, Amin Noorani, Zoe Klein, Michelle Brazas, and Nia Hughes"
+date: "June 11 - June 12 2024"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
-url: https://cbw-dev.github.io/bookdown-template/ # CHANGE THIS LINK TO YOUR LANDING PAGE LINK
+url: https://cbw-dev.github.io/INR_2024/ # CHANGE THIS LINK TO YOUR LANDING PAGE LINK
 cover-image: img/bioinformatics_logo.png
 description: |
-  Workshop website for the YEAR WORKSHOP Canadian Bioinformatics Workshop
+  Workshop website for the 2024 Introduction to R Canadian Bioinformatics Workshop
 link-citations: yes
-github-repo: cbw-dev/bookdown-template # CHANGE THIS TO YOUR OWN REPO
+github-repo: cbw-dev/INR_2024 # CHANGE THIS TO YOUR OWN REPO
 favicon: img/favicon.ico
 ---
 
@@ -18,21 +18,31 @@ favicon: img/favicon.ico
 
 # Workshop Info
 
-Welcome to the YEAR WORKSHOP Canadian Bioinformatics Workshop webpage!
+Welcome to the 2024 Introductiont to R Canadian Bioinformatics Workshop webpage!
 
-<!--## Class Photo
-
-After workshop concludes, YOUR EMBED CODE HERE-->
+<img src="img/INR-2024-Faculty-Image.png" width="650" alt="Intro to R Class 2024">-
 
 ## Schedule
 
-YOUR SCHEDULE HERE
-
-<!--Copy paste a table into https://www.tablesgenerator.com/markdown_tables (select convert to markdown) to create a table in markdown.
--->
+| Time (EDT) | June 11                                           | Time (EDT) | June 12                                               |
+|------------|---------------------------------------------------|------------|-------------------------------------------------------|
+| 8:30       | Arrivals & Check-in                               | 8:30       | Arrivals                                              |
+| 9:00       | Welcome (Nia Hughes)                              | 9:00       | Review & Module 3: Loops and Functions (Frances Wong) |
+| 9:30       | Module 1: Getting to Know R (Frances Wong)        | 10:00      | Break (15 min)                                        |
+| 10:30      | Break (15 min)                                    | 10:15      | Module 3: Loops and Functions (cont'd)                |
+| 10:45      | Module 1: Getting to Know R (cont'd)              | 11:00      | Break (15 min)                                        |
+| 11:15      | Break (15 min)                                    | 11:15      | Module 3: Loops and Functions (cont'd)                |
+| 11:30      | Module 1: Getting to Know R (cont'd)              | 12:00      | Class Photo & Break (1 hour)                          |
+| 12:00      | Break (1 hour)                                    | 13:00      | Module 4: Linear Regression (Frances Wong)            |
+| 13:00      | Module 2: Exploring your Data in R (Frances Wong) | 14:00      | Break (15 min)                                        |
+| 14:00      | Break (15 min)                                    | 14:15      | Module 4: Linear Regression (cont'd)                  |
+| 14:15      | Module 2: Exploring your Data in R (cont'd)       | 15:15      | Break (15 min)                                        |
+| 15:15      | Break (15 min)                                    | 15:30      | Short Project                                         |
+| 15:30      | Review & Short Project                            | 17:00      | Survey & Closing Remarks                              |
+| 17:30      | Finished                                          | 17:30      | Finished                                              |
 
 ## Pre-work
 
-[You can find your pre-work here.](LINK TO PREWORK)
+[You can find your pre-work here.](https://docs.google.com/forms/d/e/1FAIpQLSeagUvd0QrDGtmnR3B5h2xDOXtvznYoYkkc13h8raaOKkO_HA/viewform)
 
 

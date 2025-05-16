@@ -11,7 +11,10 @@ IF YOUR WORKSHOP INCLUDES COMPUTE:
 # Data and Compute Setup
 
 #### Course data downloads
-Coming soon!
+[Abalone.csv](INR-2024/datasets/abalone.csv)<br>
+[Water-potability.csv](INR-2024/datasets/water_potability.csv)<br>
+[Healthcare-dataset-stroke-data.csv](INR-2024/datasets/healthcare-dataset-stroke-data.csv)<br>
+[Diamonds.csv](INR-2024/datasets/diamonds.csv)
 
 #### Compute setup
 Coming soon!

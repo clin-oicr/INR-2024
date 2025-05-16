@@ -137,14 +137,14 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={{[}Name of Workshop{]}{[}Year{]}},
-  pdfauthor={Instructors: {[}list instructor names here{]}},
+  pdftitle={NAME OF WORKSHOP YEAR},
+  pdfauthor={Faculty: INSTRUCTOR AND TA NAMES},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{{[}Name of Workshop{]}{[}Year{]}}
-\author{Instructors: {[}list instructor names here{]}}
-\date{{[}Insert dates of the workshop{]}}
+\title{NAME OF WORKSHOP YEAR}
+\author{Faculty: INSTRUCTOR AND TA NAMES}
+\date{DATES}
 
 \begin{document}
 \maketitle
@@ -155,50 +155,40 @@
 }
 \part{Introduction}\label{part-introduction}
 
-\chapter{Welcome}\label{welcome}
+\chapter{Workshop Info}\label{workshop-info}
 
-Welcome to CBW's {[}workshop name, year{]} Workshop!
+Welcome to the YEAR WORKSHOP Canadian Bioinformatics Workshop webpage!
 
-Put some introductory content here. (ex. links to bioinformatics.ca, general info)
+\section{Schedule}\label{schedule}
 
-\chapter{Course Schedule}\label{course-schedule}
+YOUR SCHEDULE HERE
 
-Copy paste a table into \url{https://www.tablesgenerator.com/markdown_tables} (select convert to markdown) to create a table in markdown.
+\section{Pre-work}\label{pre-work}
 
-\section{Pre-workshop Materials}\label{pre-workshop-materials}
+\href{LINK\%20TO\%20PREWORK}{You can find your pre-work here.}
 
-Click \href{insert\%20link\%20here}{here} for your prework!
+\chapter{Meet Your Faculty}\label{meet-your-faculty}
 
-\section{Computing Setup \& Downloads}\label{computing-setup-downloads}
-
-Insert downloads (ex. datasets) or other tech instructions here (ex. AWS Instructions)
-
-\section{Meet Your Faculty}\label{meet-your-faculty}
-
-Here's your team!
-
-\subsection{Instructor, TA, \ldots{}}\label{instructor-ta}
+\subsubsection{NAME}\label{name}
 
 \begin{quote}
-Job Title
-Company/University/\ldots{}
-Location
+JOB TITLE
+INSTITUTION
+LOCATION
 
---- contact information
+--- CONTACT INFO, IF PROVIDED
 \end{quote}
 
-{[}insert description of the person{]}
+BIO GOES HERE
 
-\subsection{Michelle Brazas, PhD}\label{michelle-brazas-phd}
-
-\includegraphics{./img/faculty/michelle-brazas.jpg}\\
+\subsubsection{Michelle Brazas, PhD}\label{michelle-brazas-phd}
 
 \begin{quote}
 Scientific Director
 Canadian Bioinformatics Workshops (CBW)
 Toronto, ON, CA
 
---- \href{mailto:support@bioinformatics.ca}{\nolinkurl{support@bioinformatics.ca}}
+--- \href{mailto:director@bioinformatics.ca}{\nolinkurl{director@bioinformatics.ca}}
 \end{quote}
 
 Dr.~Michelle Brazas is the Associate Director for Adaptive Oncology at the Ontario Institute for
@@ -208,32 +198,31 @@ Biotechnology at BCIT. Michelle co-founded and runs the Toronto Bioinformatics U
 (TorBUG) now in its 11th season, and plays an active role in the International Society of
 Computational Biology where she sits on the Board of Directors and Executive Board.
 
-\subsection{Nia Hughes (she/her)}\label{nia-hughes-sheher}
-
-\includegraphics{./img/faculty/nia-hughes.jpeg}\\
+\subsubsection{Nia Hughes (she/her)}\label{nia-hughes-sheher}
 
 \begin{quote}
-Program Manager, Bioinformatics.ca
+Platform Training Manager, Canadian Bioinformatics Hub
 Ontario Institute for Cancer Research
 Toronto, ON, Canada
 
---- \href{mailto:nia.hughes@oicr.on.ca}{\nolinkurl{nia.hughes@oicr.on.ca}}
+--- \href{mailto:training@bioinformatics.ca}{\nolinkurl{training@bioinformatics.ca}}
 \end{quote}
 
-Nia is the Program Manager for Bioinformatics.ca, where she coordinates the Canadian
-Bioinformatics Workshop Series. Prior to starting at OICR, she completed her M.Sc. in
-Bioinformatics from the University of Guelph in 2020 before working there as a
-bioinformatician studying epigenetic and transcriptomic patterns across maize varieties.
+Nia is the Platform Training Manager for the Canadian Bioinformatics Hub, where she coordinates the Canadian Bioinformatics Workshop Series. Prior to starting at OICR, she completed her M.Sc. in Bioinformatics from the University of Guelph in 2020 before working there as a bioinformatician studying epigenetic and transcriptomic patterns across maize varieties.
 
-\section{Class Photo}\label{class-photo}
+\chapter{Data and Compute Setup}\label{data-and-compute-setup}
 
-\textless- Replace the file address to your actual class photo file location
+\subsubsection{Course data downloads}\label{course-data-downloads}
+
+Coming soon!
+
+\subsubsection{Compute setup}\label{compute-setup}
+
+Coming soon!
 
 \part{Modules}\label{part-modules}
 
 \chapter{Module 1}\label{module-1}
-
-Welcome to module 1!
 
 \section{Lecture}\label{lecture}
 
@@ -292,12 +281,6 @@ Try running these code ``chunks'' by pressing the green (left-pointing) triangle
 You will see the code run in the console and the output provided below the code chunk.
 
 The output of the code will also be produced under the code chunk on your website page.
-
-\chapter{Module 2}\label{module-2}
-
-\section{Lecture}\label{lecture-1}
-
-\section{Lab}\label{lab-1}
 
   \bibliography{book.bib,packages.bib}
 
