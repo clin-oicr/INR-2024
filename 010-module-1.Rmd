@@ -4,9 +4,9 @@
 
 ## Lecture
 
-<iframe width="100%" height=455px src="https://www.youtube.com/embed/Re3Lricv7o4" title="CBW Introduction to R 2024 | 01: Getting To Know R" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Re3Lricv7o4" title="CBW Introduction to R 2024 | 01: Getting To Know R" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Lecture Slides
+<br>
 
 <iframe src="https://drive.google.com/file/d/1ZvUYmpS_HD5wJWy-O_Ot7yaeUQHs1OHj/preview" width="640" height="480" allow="autoplay"></iframe>
 
@@ -62,7 +62,7 @@ dozen*14
 
 ```
 
-### General syntax
+### General Syntax
 
 Multiple values can be stored into an object using the function `c()` for combine or concatenate 
 
@@ -83,7 +83,7 @@ All functions have default parameters that you can access using the help panel (
 ?mean
 ```
 
-### Getting started with data
+### Getting Started with Data
 
 Data can be created *de novo* from within R or read in from an external object. Either way, there are a few broad categories of data types that you will encounter: 
 
@@ -127,7 +127,7 @@ prime[2]
 
 firstDF [2, 4] # [rows,col]
 ```
-### Importing data 
+### Importing Data 
 
 Rather than entering you data manually, you are more likely to read in data from an external source such as an output file from a machine or data stored in an excel table. R is pretty flexible with the files that it can accept, but there are differences to how it is read in. 
 
@@ -247,7 +247,7 @@ mean(abalone$Diameter)
 
 Good job writing your first investigative pieces of code! Woo hoo!
 
-### Revising the R environment
+### Revising the R Environment
 
 Let's take a moment to revisit the Rstudio interface and the environment panel. 
 
@@ -275,7 +275,7 @@ sessionInfo()
 ```
 Notice that we have some base packages active even though we did not explicitly call for them.
 
-### Installing packages from CRAN
+### Installing Packages from CRAN
 
 Before we move on to a break, let's revisit functions and packages. Functions are the commands we use to act on objects. As an open source software, anyone can develop new functions and package them into ... packages to share with the community! Virtually anything you want to do - so does someone else! 
 
@@ -354,7 +354,7 @@ summary(abalone_small)
 
 ```
 
-### Adding new columns of data 
+### Adding New Columns of Data 
 
 New columns can also be created if you wanted to add more information to the dataset 
 
@@ -386,7 +386,7 @@ Keep in mind that tidyverse creates their own rules for R and their functions wo
 
 Rather than using square brackets to subset columns, we can *select* the rows that we want 
 
-```{r}
+```{r, results='hide'}
 select(abalone, Diameter, Length, Whole.weight) #Tidyverse selecting columns
 
 abalone$Diameter #base R 
@@ -394,13 +394,13 @@ abalone$Diameter #base R
 
 *select* can also be used to exclude specific columns 
 
-```{r}
+```{r, results='hide'}
 select(abalone, -Length, -Diameter)
 ```
 
 Select only works on columns. We can use a similar function to *filter* for the rows that we want 
 
-```{r}
+```{r, results='hide'}
 # Filter indexes rows 
 
 filter(abalone, Sex == "I") # abalone[abalone$Sex == "I", ]
@@ -501,7 +501,11 @@ plot(abalone$Length, abalone$Whole.weight)
 plot(abalone$Length, abalone$Whole.weight, col = abalone$Sex)
 ```
 
-Note that you cannot color on a column of categorical data if it is not a factor because each entry is considered unique, there are no shared characteristics between the observations. 
+:::: {.callout type="blue" title="Note"}
+
+You cannot color on a column of categorical data if it is not a factor because each entry is considered unique, there are no shared characteristics between the observations.
+
+::::
 
 It can be confusing to figure out which color corresponds to which category in base R.
 
@@ -633,7 +637,7 @@ ggplot(abalone, aes(x = Sex, y = Whole.weight)) +
   theme_classic()
 ```
 
-### Multi-panel plots with ggplot 
+### Multi-panel Plots with ggplot 
 
 Plots can be saved as objects 
 
@@ -749,4 +753,14 @@ Create a plot with the level of water hardness on the x axis and sulphate on the
 
 Try applying the `facet_grid()` layer to the plot in order to group the plots by a factor. Make sure to use the `~` before the column name! 
 
-(Note - the data is quite messy so don't worry if the results do not separate as much as you would like - real data is messy!)
+:::: {.callout type="blue" title="Note"}
+
+The data is quite messy so don't worry if the results do not separate as much as you would like - real data is messy!
+
+::::
+
+:::: {.callout type="green" title="Lab Completed!"}
+
+Congratulations! You have completed Lab 1!
+
+::::

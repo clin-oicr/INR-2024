@@ -1,5 +1,10 @@
 bookdown::gitbook:
   css: style.css # This is how bookdown knows to look at style.css for formatting
+  pandoc_args:
+    - "--lua-filter=callouts.lua"
+  includes:                             # <<< ADDED/ENSURED THIS SECTION
+    in_header:                           # <<<
+      - fa-header.html                   # <<<
   config:
     toc: # Table of Contents
       collapse: subsection
@@ -43,3 +48,10 @@ bookdown::pdf_book:
   citation_package: natbib
   keep_tex: yes
 bookdown::epub_book: default
+bookdown::html_document2:
+  css: style.css                         # <<< ADDED/ENSURED css line
+  pandoc_args:
+    - "--lua-filter=callouts.lua"
+  includes:                             # <<< ADDED/ENSURED THIS SECTION
+    in_header:                           # <<<
+      - fa-header.html                   # <<<

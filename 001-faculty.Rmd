@@ -2,7 +2,7 @@
 
 #### Frances Wong
 
-<img src="./img/faculty/MISSINGHEADSHOT.PNG" width="200" alt="Photo of NAME">
+<img src="./img/faculty/frances-wong.png" width="200" alt="Photo of Frances Wong">
 
 >Assistant Professor, Teaching Stream <br>
 University of Toronto Missisauga <br>
@@ -20,7 +20,7 @@ they collect each semester.
 
 #### Andrés Melani
 
-<img src="./img/faculty/MISSINGHEADSHOT.PNG" width="200" alt="Photo of NAME">
+<img src="./img/faculty/andrés-melani.png" width="200" alt="Photo of Andrés Melani">
 
 >Ph.D. student, Courtot Lab <br>
 University of Toronto | Ontario Institute for Cancer Research <br>
@@ -38,7 +38,7 @@ healthcare scenarios.
 
 #### Amin Noorani
 
-<img src="./img/faculty/MISSINGHEADSHOT.PNG" width="200" alt="Photo of NAME">
+<img src="./img/faculty/amin-noorani.png" width="200" alt="Photo of Amin Noorani">
 
 >Master Student | Bioinformatician <br>
 Toronto Metropolitan University (Olson Lab)
@@ -57,7 +57,7 @@ determine whether cell images have been treated with various compounds.
 
 #### Zoe Klein
 
-<img src="./img/faculty/MISSINGHEADSHOT.PNG" width="200" alt="Photo of NAME">
+<img src="./img/faculty/zoe-klein.png" width="200" alt="Photo of Zoe Klein">
 
 >PhD Candidate, Reimand Lab <br>
 University of Toronto <br>
@@ -70,7 +70,7 @@ non-coding RNA transcripts in cancer.
 
 #### Michelle Brazas, PhD
 
-<img src="./img/faculty/michelle-brazas.jpg" width="200" alt="Photo of Michelle Brazas.">
+<img src="./img/faculty/michelle-brazas.png" width="200" alt="Photo of Michelle Brazas.">
 
 
 >Scientific Director <br>
@@ -88,7 +88,7 @@ Computational Biology where she sits on the Board of Directors and Executive Boa
 
 #### Nia Hughes (she/her)
 
-<img src="./img/faculty/nia-hughes.jpeg" width="200" alt="Photo of Nia Hughes.">
+<img src="./img/faculty/nia-hughes.png" width="200" alt="Photo of Nia Hughes.">
 
 >Platform Training Manager, Canadian Bioinformatics Hub<br>
 Ontario Institute for Cancer Research<br>

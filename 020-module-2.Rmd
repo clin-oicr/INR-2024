@@ -109,7 +109,11 @@ Create a plot with the level of water hardness on the x axis and sulphate on the
 
 Try applying the `facet_grid()` layer to the plot in order to group the plots by a factor. Make sure to use the `~` before the column name! 
 
-(Note - the data is quite messy so don't worry if the results do not separate as much as you would like - real data is messy!)
+:::: {.callout type="blue" title="Note"}
+
+The data is quite messy so don't worry if the results do not separate as much as you would like - real data is messy!
+
+::::
 
 ```{r}
 ggplot(water_df, aes(x = Hardness, y = Sulfate, col = Potability)) + 
@@ -175,7 +179,7 @@ datasaurus_dozen %>%
 head(datasaurus_dozen)
 ```
 
-### Generalizable code 
+### Generalizable Code 
 
 A major strength of programming is the ability to automate repetitive tasks. As a general rule of thumb, if you need to do a task more than three times (ex. analyzing multiple PCR plates or integrating clinical data from multiple days), it is worth it to invest time to write generalizable code or a custom function. 
 
@@ -183,7 +187,7 @@ Now that we're getting comfortable writing code, we will spend some time revisit
 
 Generalizable code begins at data collection. Depending on your workflow, you may or may not be able to influence this stage of the analysis. If possible, it is best practice to keep the column names and entries for categorical variables consistent. For example, when recording the age of patients, "6", "6 ", "six", and "Six" are all considered different levels of the factor so you will need to either make sure data collection is consistent or check and correct these inconsistencies in your code. Get into a habit of checking your work. Whether it is code you've written yourself, code you you've been sent by a collaborator, or published data from a biobank - never assume the data is as you predicted.
 
-### Generalizable plots
+### Generalizable Plots
 
 Remember when we edited our code to test out multiple datasets in the datasaurus dozen object? Perhaps you copy and pasted the code several time and changed the column name? This is not optimal because if you need to change the code in one instance (for example changing the x-axis label), you'll need to revisit ever instance that you copy and pasted to code to. This approach leads you vulnerable to errors when copy and pasting. 
 
@@ -244,7 +248,7 @@ Used in function, indicate multiple lines of related code
 Rmd -- indicates language in code chunk
 
 
-### Dataset - Heart Stroke Preduction 
+### Dataset - Heart Stroke Prediction 
 
 The dataset we will be working with for today's workshop contains clinical data collected with the aim of predicting whether a patient is likely to suffer a stroke. 
 
@@ -264,7 +268,12 @@ Here is some more information about the columns in this dataset:
 10) bmi: body mass index
 11) smoking_status: "formerly smoked", "never smoked", "smokes" or "Unknown"*
 12) stroke: 1 if the patient had a stroke or 0 if not
-*Note: "Unknown" in smoking_status means that the information is unavailable for this patient
+
+:::: {.callout type="blue" title="Note"}
+
+"Unknown" in smoking_status means that the information is unavailable for this patient
+
+::::
 
 Let's get started! 
 
@@ -329,7 +338,7 @@ heart$stroke <- as.factor(heart$stroke)
 summary(heart)
 ```
 
-### Incomplete data  
+### Incomplete Data  
 
 Firstly, we have to make a decision on how to handle missing values. We can either accept that some of the columns are incomplete or eliminate rows that do not have full data. Let's evaluate which columns this affects 
 
@@ -534,7 +543,7 @@ When working through the code, you can temporarily remove the code removing the 
 ```
 Great! Now the y-axis does not change between the plots and they are directly comparable.
 
-### Conditional for loops 
+### Conditional for Loops 
 
 Boolean statements can be used to write conditional statements. If we do not want the loop to be applied to every item, we can add a condition. 
 
@@ -604,7 +613,7 @@ for(row in 1:nrow(heart)) {
 table(heart$glucose_WHO)
 ```
 
-### Countinous variables 
+### Countinous Variables 
 
 In the heart dataset, we have three continuous variables. In R, continuous variables will be `numeric` values. Continuous variable have a wide range of ordered values. For example, the `age` values have a range of 10 to 82 - any value in between is possible. 
 
@@ -639,7 +648,7 @@ The tail is exaggerated. Since all transformations add some artificial noise, we
 
 We will proceed with the non-transformed data.
 
-### Linear models 
+### Linear Models 
 
 Linear regression models allow us to investigate the relationship between two continuous variables. For simple linear models, we have one independent and one dependent variable. The independent variable is the one that is being controlled or manipulated in the experiment, and the dependent variable will change respectively. 
 
@@ -741,7 +750,7 @@ ggplot(heart, aes(x=bmi, y=avg_glucose_level, alpha=0.3, col = stroke))+
 
 ```
 
-### Demo detour to function for lm plots 
+### Demo Detour to Function for lm Plots 
 
 ```{r}
 # The variables 
@@ -770,7 +779,7 @@ ggplot(heart, aes(x=bmi, y=avg_glucose_level, alpha=0.3, col = stroke))+
 lm_gluc_bmi(custom_col = "green3")
 ```
 
-### Notes on data types 
+### Notes on Data Types 
 
 Numeric 
 -dbl doublets, int integers
@@ -787,7 +796,7 @@ Logical
 
 >> Differences are apparent when using a summary call 
 
-### Day 2 project
+### Day 2 Project
 
 For this mini guided project, we will be working with a dataset that contains the prices and other attributes of almost 54,000 diamonds and is publicly available at: https://www.kaggle.com/datasets/shivam2503/diamonds
 
@@ -871,3 +880,9 @@ fit_diamond$coefficients
 diamond_continous("carat", "clarity") + 
   geom_abline(intercept = fit_diamond$coefficients[1], slope = fit_diamond$coefficients[2], color = "red", size = 2) 
 ```
+
+:::: {.callout type="green" title="Lab Completed!"}
+
+Congratulations! You have completed Lab 2!
+
+::::

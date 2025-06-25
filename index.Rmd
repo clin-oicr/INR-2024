@@ -1,7 +1,7 @@
 --- 
 title: "Introduction to R 2024"
 author: "Faculty: Frances Wong, Andrés Melani, Amin Noorani, Zoe Klein, Michelle Brazas, and Nia Hughes"
-date: "June 11 - June 12 2024"
+date: "June 11, 2024 - June 12, 2024"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -20,7 +20,7 @@ favicon: img/favicon.ico
 
 Welcome to the 2024 Introduction to R Canadian Bioinformatics Workshop webpage!
 
-<img src="img/INR-2024-Faculty-Image.png" width="650" alt="Intro to R Class 2024">-
+<iframe src="https://drive.google.com/file/d/1lN-IKeJTfd-8riUE267CmS7w3yNDENjh/preview" width="640" height="480" allow="autoplay"></iframe>
 
 ## Schedule
 
