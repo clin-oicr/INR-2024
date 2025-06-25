@@ -311,7 +311,15 @@ Potability</p>
 <li>Notice that the pH column contains a couple hundred NA values. NA are special values in R (like how “pi” is preset to a value of 3.14159…) to indicate that there is missing data, or it is not available. There are also some NAs in the Sulfate and Trihalomethanes columns.</li>
 </ol>
 <p>Create new object called water_df that only contains complete observations.</p>
-<p>Hint: take a look at the function called <code>na.omit()</code>. In most cases, someone’s already done what you’ve wanted to do so there may already be code or functions that you can adapt and use!</p>
+<div class="callout-orange">
+<span class="callout-icon"><i class="fas fa-fire" aria-hidden="true"></i></span>
+<div class="callout-content">
+<div class="callout-title-static" style="margin-bottom: 0.5em;">
+<p>Tip</p>
+</div>
+<p>Take a look at the function called <code>na.omit()</code>. In most cases, someone’s already done what you’ve wanted to do so there may already be code or functions that you can adapt and use!</p>
+</div>
+</div>
 <div class="sourceCode" id="cb141"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb141-1"><a href="day-2.html#cb141-1" tabindex="-1"></a>water_df <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(data)</span>
 <span id="cb141-2"><a href="day-2.html#cb141-2" tabindex="-1"></a><span class="fu">summary</span>(data)</span></code></pre></div>
 <pre><code>##        ph            Hardness          Solids         Chloramines    
@@ -608,7 +616,15 @@ Rmd – indicates language in code chunk</p>
 <h3>Exercise<a href="day-2.html#exercise-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Reading in the dataset can be an intimidating step when you’re just starting out with programming. Since this is a csv file, we can use the appropriately named <code>read.csv()</code> function. In cases when you have other file types such as .txt or .tab files that are tab deliminated, there is also a <code>read.table()</code> function that is more universal (but requires more parameters to let R know how your data is stored).</p>
 <p>Read in the <code>healthcare-dataset-stroke-data.csv</code> into an object called <code>heart</code>. Check your object using head and/or summary functions. Toggle a parameter called <code>stringsAsFactors</code> to <code>TRUE</code> in order to automatically import character values as factors rather than characters</p>
-<p>Hint: make sure the dataset is in the same directory or folder as this .Rmd file for ease of import</p>
+<div class="callout-orange">
+<span class="callout-icon"><i class="fas fa-fire" aria-hidden="true"></i></span>
+<div class="callout-content">
+<div class="callout-title-static" style="margin-bottom: 0.5em;">
+<p>Tip</p>
+</div>
+<p>Make sure the dataset is in the same directory or folder as this .Rmd file for ease of import</p>
+</div>
+</div>
 <div class="sourceCode" id="cb177"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb177-1"><a href="day-2.html#cb177-1" tabindex="-1"></a>heart <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;../INR-2024/datasets/healthcare-dataset-stroke-data.csv&quot;</span>, <span class="at">stringsAsFactors=</span><span class="cn">TRUE</span>)</span>
 <span id="cb177-2"><a href="day-2.html#cb177-2" tabindex="-1"></a></span>
 <span id="cb177-3"><a href="day-2.html#cb177-3" tabindex="-1"></a><span class="fu">head</span>(heart)</span></code></pre></div>
@@ -936,7 +952,15 @@ Rmd – indicates language in code chunk</p>
 <div id="exercise-7" class="section level3 hasAnchor">
 <h3>Exercise<a href="day-2.html#exercise-7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Copy and paste the loop from above and modify it so that the range of values on the x and y axis are the same for all plots.</p>
-<p>Hint: the limits of the x axis can be specified by adding a layer called <code>xlim(lower, upper)</code> where it takes two numbers - the lower limit followed by the upper limit. These numbers can be stored in objects or inputted directly . Similarly, there is a parallel function called <code>ylim()</code> which also takes the same two parameters</p>
+<div class="callout-orange">
+<span class="callout-icon"><i class="fas fa-fire" aria-hidden="true"></i></span>
+<div class="callout-content">
+<div class="callout-title-static" style="margin-bottom: 0.5em;">
+<p>Tip</p>
+</div>
+<p>The limits of the x axis can be specified by adding a layer called <code>xlim(lower, upper)</code> where it takes two numbers - the lower limit followed by the upper limit. These numbers can be stored in objects or inputted directly . Similarly, there is a parallel function called <code>ylim()</code> which also takes the same two parameters</p>
+</div>
+</div>
 <p>When working through the code, you can temporarily remove the code removing the axis labels by commenting out the lines with a hashtag.</p>
 <p>Great! Now the y-axis does not change between the plots and they are directly comparable.</p>
 </div>
@@ -1002,7 +1026,15 @@ Rmd – indicates language in code chunk</p>
 <li><code>avg_glucose_levels</code> between 70-100 are annotated as <code>average</code></li>
 <li><code>avg_glucose_levels</code> over 100 are annotated as <code>followup</code></li>
 </ul>
-<p>Hint: conditions can be combined using the <code>&amp;</code> for <code>and</code> where as <code>|</code> is used for <code>or</code> statements.</p>
+<div class="callout-orange">
+<span class="callout-icon"><i class="fas fa-fire" aria-hidden="true"></i></span>
+<div class="callout-content">
+<div class="callout-title-static" style="margin-bottom: 0.5em;">
+<p>Tip</p>
+</div>
+<p>Conditions can be combined using the <code>&amp;</code> for <code>and</code> where as <code>|</code> is used for <code>or</code> statements.</p>
+</div>
+</div>
 <div class="sourceCode" id="cb262"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb262-1"><a href="day-2.html#cb262-1" tabindex="-1"></a><span class="fu">colnames</span>(heart) <span class="co"># SHOULD BE &#39;avg_glucose_level&#39; WITHOUT THE S AT THE </span><span class="re">END</span><span class="co"> </span></span></code></pre></div>
 <pre><code>##  [1] &quot;id&quot;                &quot;gender&quot;            &quot;age&quot;              
 ##  [4] &quot;hypertension&quot;      &quot;heart_disease&quot;     &quot;ever_married&quot;     
@@ -1066,7 +1098,7 @@ Rmd – indicates language in code chunk</p>
 <div class="sourceCode" id="cb274"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb274-1"><a href="day-2.html#cb274-1" tabindex="-1"></a>summary</span></code></pre></div>
 <pre><code>## function (object, ...) 
 ## UseMethod(&quot;summary&quot;)
-## &lt;bytecode: 0x123d9a298&gt;
+## &lt;bytecode: 0x12539d268&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>This overall looks like a good model. The p-value is very low and statistically significant. However, the Multiple R-squared values is small and the slope of bmi is low.</p>
 <p>From the results, we could conclude that changes in bmi are associated to the average glucose level as the p-value is less than 0.05. We can also state that as bmi increases, there will be an increase in the average glucose level as the slope is weakly positive 0.11.</p>
@@ -1274,7 +1306,15 @@ table width of top of diamond relative to widest point (43–95)</p>
 <ol start="3" style="list-style-type: decimal">
 <li>Using the code in the previous step as foundation, create an object called <code>diamonds_categorical</code> that contains the name of all the categorical columns. Then, write a loop to print out a separate plot with each of the different categorical variables on the x axis and price on the y-axis.</li>
 </ol>
-<p>Hint: remember how aes can be specified in both the <code>ggplot()</code> or <code>geom_xx()</code> layer? You will need to use this because we are string the name of a column as a variable in our loop and in order for R to know that it is looking for a column name rather than an object, you will need to use the <code>aes_string()</code> parameter for just the <code>geom_boxplot()</code> layer to specify the changing x axis. The y axis can remain with <code>aes()</code> in the parent <code>ggplot()</code> layer.</p>
+<div class="callout-orange">
+<span class="callout-icon"><i class="fas fa-fire" aria-hidden="true"></i></span>
+<div class="callout-content">
+<div class="callout-title-static" style="margin-bottom: 0.5em;">
+<p>Tip</p>
+</div>
+<p>Remember how aes can be specified in both the <code>ggplot()</code> or <code>geom_xx()</code> layer? You will need to use this because we are string the name of a column as a variable in our loop and in order for R to know that it is looking for a column name rather than an object, you will need to use the <code>aes_string()</code> parameter for just the <code>geom_boxplot()</code> layer to specify the changing x axis. The y axis can remain with <code>aes()</code> in the parent <code>ggplot()</code> layer.</p>
+</div>
+</div>
 <div class="sourceCode" id="cb299"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb299-1"><a href="day-2.html#cb299-1" tabindex="-1"></a><span class="fu">str</span>(diamonds)</span></code></pre></div>
 <pre><code>## &#39;data.frame&#39;:    53940 obs. of  11 variables:
 ##  $ X      : int  1 2 3 4 5 6 7 8 9 10 ...
@@ -1305,7 +1345,15 @@ table width of top of diamond relative to widest point (43–95)</p>
 <ol start="4" style="list-style-type: decimal">
 <li>Write a function called <code>diamond_continous</code> that allows you to make a scatterplot that accepts one variable to plot on the x-axis as well as another variable to color the plot by as the inputs. Price will remain on the y-axis.</li>
 </ol>
-<p>Hint: Start out by making one plot, make it generalized, and then convert this into a function.</p>
+<div class="callout-orange">
+<span class="callout-icon"><i class="fas fa-fire" aria-hidden="true"></i></span>
+<div class="callout-content">
+<div class="callout-title-static" style="margin-bottom: 0.5em;">
+<p>Tip</p>
+</div>
+<p>Start out by making one plot, make it generalized, and then convert this into a function.</p>
+</div>
+</div>
 <div class="sourceCode" id="cb303"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb303-1"><a href="day-2.html#cb303-1" tabindex="-1"></a>diamond_continous <span class="ot">&lt;-</span> <span class="cf">function</span>(contV, colV) {</span>
 <span id="cb303-2"><a href="day-2.html#cb303-2" tabindex="-1"></a>  </span>
 <span id="cb303-3"><a href="day-2.html#cb303-3" tabindex="-1"></a>  diaPlot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> diamonds, <span class="fu">aes</span>(<span class="at">y =</span> price)) <span class="sc">+</span> </span>

@@ -725,7 +725,11 @@ Insert a code chunk underneath each step to carry out the instruction.
 
 Create new object called water_df that only contains complete observations. 
 
-Hint: take a look at the function called `na.omit()`. In most cases, someone's already done what you've wanted to do so there may already be code or functions that you can adapt and use!
+:::: {.callout type="orange" title="Tip"}
+
+Take a look at the function called `na.omit()`. In most cases, someone's already done what you've wanted to do so there may already be code or functions that you can adapt and use!
+
+::::
 
 3. The Potability column has two possible values: 1 means Potable and 0 means Not potable.
 

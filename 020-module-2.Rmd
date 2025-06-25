@@ -42,7 +42,12 @@ data[1:10, ]
 
 Create new object called water_df that only contains complete observations. 
 
-Hint: take a look at the function called `na.omit()`. In most cases, someone's already done what you've wanted to do so there may already be code or functions that you can adapt and use!
+
+:::: {.callout type="orange" title="Tip"}
+
+Take a look at the function called `na.omit()`. In most cases, someone's already done what you've wanted to do so there may already be code or functions that you can adapt and use!
+
+::::
 
 ```{r}
 water_df <- na.omit(data)
@@ -283,7 +288,11 @@ Reading in the dataset can be an intimidating step when you're just starting out
 
 Read in the `healthcare-dataset-stroke-data.csv` into an object called `heart`. Check your object using head and/or summary functions. Toggle a parameter called `stringsAsFactors` to `TRUE` in order to automatically import character values as factors rather than characters 
 
-Hint: make sure the dataset is in the same directory or folder as this .Rmd file for ease of import 
+:::: {.callout type="orange" title="Tip"}
+
+Make sure the dataset is in the same directory or folder as this .Rmd file for ease of import 
+
+::::
 
 ```{r}
 heart <- read.csv("../INR-2024/datasets/healthcare-dataset-stroke-data.csv", stringsAsFactors=TRUE)
@@ -534,7 +543,11 @@ for(cat in smoke_cat) {
 
 Copy and paste the loop from  above and modify it so that the range of values on the x and y axis are the same for all plots. 
 
-Hint: the limits of the x axis can be specified by adding a layer called `xlim(lower, upper)` where it takes two numbers - the lower limit followed by the upper limit. These numbers can be stored in objects or inputted directly . Similarly, there is a parallel function called `ylim()` which also takes the same two parameters 
+:::: {.callout type="orange" title="Tip"}
+
+The limits of the x axis can be specified by adding a layer called `xlim(lower, upper)` where it takes two numbers - the lower limit followed by the upper limit. These numbers can be stored in objects or inputted directly . Similarly, there is a parallel function called `ylim()` which also takes the same two parameters 
+
+::::
 
 When working through the code, you can temporarily remove the code removing the axis labels by commenting out the lines with a hashtag. 
 
@@ -594,7 +607,12 @@ Expected fasting blood glucose concentrations defined by the WHO are between 70 
 - `avg_glucose_levels` between 70-100 are annotated as `average`
 - `avg_glucose_levels` over 100 are annotated as `followup`
 
-Hint: conditions can be combined using the `&` for `and` where as `|` is used for `or` statements. 
+
+:::: {.callout type="orange" title="Tip"}
+
+Conditions can be combined using the `&` for `and` where as `|` is used for `or` statements.
+
+::::
 
 ```{r}
 colnames(heart) # SHOULD BE 'avg_glucose_level' WITHOUT THE S AT THE END 
@@ -833,7 +851,12 @@ ggplot(data = diamonds, aes(x = cut, y = price)) +
 
 3. Using the code in the previous step as foundation, create an object called `diamonds_categorical` that contains the name of all the categorical columns. Then, write a loop to print out a separate plot with each of the different categorical variables on the x axis and price on the y-axis. 
 
-Hint: remember how aes can be specified in both the `ggplot()` or `geom_xx()` layer? You will need to use this because we are string the name of a column as a variable in our loop and in order for R to know that it is looking for a column name rather than an object, you will need to use the `aes_string()` parameter for just the `geom_boxplot()` layer to specify the changing x axis. The y axis can remain with `aes()` in the parent `ggplot()` layer. 
+
+:::: {.callout type="orange" title="Tip"}
+
+Remember how aes can be specified in both the `ggplot()` or `geom_xx()` layer? You will need to use this because we are string the name of a column as a variable in our loop and in order for R to know that it is looking for a column name rather than an object, you will need to use the `aes_string()` parameter for just the `geom_boxplot()` layer to specify the changing x axis. The y axis can remain with `aes()` in the parent `ggplot()` layer. 
+
+::::
 
 ```{r}
 str(diamonds)
@@ -852,7 +875,12 @@ for(cat in diamonds_categorical) {
 
 4. Write a function called `diamond_continous` that allows you to make a scatterplot that accepts one variable to plot on the x-axis as well as another variable to color the plot by as the inputs. Price will remain on the y-axis. 
 
-Hint: Start out by making one plot, make it generalized, and then convert this into a function. 
+
+:::: {.callout type="orange" title="Tip"}
+
+Start out by making one plot, make it generalized, and then convert this into a function.
+
+::::
 
 ```{r}
 
