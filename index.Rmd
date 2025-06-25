@@ -33,7 +33,7 @@ Welcome to the 2024 Introduction to R Canadian Bioinformatics Workshop webpage!
 | 10:45      | Module 1: Getting to Know R (cont'd)              | 11:00      | Break (15 min)                                        |
 | 11:15      | Break (15 min)                                    | 11:15      | Module 3: Loops and Functions (cont'd)                |
 | 11:30      | Module 1: Getting to Know R (cont'd)              | 12:00      | Class Photo & Break (1 hour)                          |
-| 12:00      | Break (1 hour)                                    | 13:00      | Module 4: Linear Regression (Frances Wong)            |
+| 12:00      | Break (1 h)                                    | 13:00      | Module 4: Linear Regression (Frances Wong)            |
 | 13:00      | Module 2: Exploring your Data in R (Frances Wong) | 14:00      | Break (15 min)                                        |
 | 14:00      | Break (15 min)                                    | 14:15      | Module 4: Linear Regression (cont'd)                  |
 | 14:15      | Module 2: Exploring your Data in R (cont'd)       | 15:15      | Break (15 min)                                        |
