@@ -32,7 +32,7 @@ bookdown::gitbook:
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li></center>
 
     # YOU MUST REPLACE THE LINK BELOW - This is a link to your index.Rmd on your GitHub repo, which allows people to make suggestions
-    edit: https://github.com/cbw-dev/bookdown-template/blob/main/%s # Go to your index.Rmd page on GitHub, copy and paste the link to it, and add
+    edit: https://github.com/bioinformaticsdotca/INR_2024/blob/main/%s # Go to your index.Rmd page on GitHub, copy and paste the link to it, and add
     # Steps:
     # 1. Go to your index.Rmd page on GitHub, Copy and paste the link to it.
     # 2. Copy and paste the link to it, excluding the "index.Rmd" ending.

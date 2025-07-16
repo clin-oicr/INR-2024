@@ -5,12 +5,12 @@ date: "June 11, 2024 - June 12, 2024"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
-url: https://cbw-dev.github.io/INR_2024/ # CHANGE THIS LINK TO YOUR LANDING PAGE LINK
+url: https://bioinformaticsdotca.github.io/INR_2024/ # CHANGE THIS LINK TO YOUR LANDING PAGE LINK
 cover-image: img/bioinformatics_logo.png
 description: |
   Workshop website for the 2024 Introduction to R Canadian Bioinformatics Workshop
 link-citations: yes
-github-repo: cbw-dev/INR_2024 # CHANGE THIS TO YOUR OWN REPO
+github-repo: bioinformaticsdotca/INR_2024 # CHANGE THIS TO YOUR OWN REPO
 favicon: img/favicon.ico
 ---
 

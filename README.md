@@ -1,9 +1,3 @@
 ## CBW WORKSHOP YEAR
 
-[Workshop Website](YOUR WORKSHOP URL HERE)
-
-CITY, PROVINCE(S)  
-Instructors: INSTRUCTOR NAMES  
-TAs: TA NAMES
-
-OUTLINE HERE
+[Workshop Website](https://bioinformaticsdotca.github.io/INR_2024/)
