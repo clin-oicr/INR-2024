@@ -24,7 +24,7 @@ Welcome to the 2024 Introduction to R Canadian Bioinformatics Workshop webpage!
 
 ## Schedule
 
-| Time (EDT) | June 11                                           | Time (EDT) | June 12                                               |
+| **Time (EDT)** | **June 11**                                           | **Time (EDT)** | **June 12**                                               |
 |------------|---------------------------------------------------|------------|-------------------------------------------------------|
 | 8:30       | Arrivals & Check-in                               | 8:30       | Arrivals                                              |
 | 9:00       | Welcome (Nia Hughes)                              | 9:00       | Review & Module 3: Loops and Functions (Frances Wong) |
